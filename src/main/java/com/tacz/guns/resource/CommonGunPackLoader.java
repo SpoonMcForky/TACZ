@@ -101,11 +101,7 @@ public class CommonGunPackLoader {
     }
 
     private static void checkDefaultPack() {
-        if (!OtherConfig.DEFAULT_PACK_DEBUG.get()) {
-            for (ResourceManager.ExtraEntry entry : ResourceManager.EXTRA_ENTRIES) {
-                GetJarResources.copyModDirectory(entry.modMainClass(), entry.srcPath(), FOLDER, entry.extraDirName());
-            }
-        }
+
     }
 
     private static void createFolder() {
